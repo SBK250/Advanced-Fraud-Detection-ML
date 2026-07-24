@@ -4,10 +4,10 @@
 
 | Name | Role |
 |------|------|
-| Sai Baba Kancherla (Team Lead) | Modeling & Project Integration |
-| Chandu Pallam | Data Collection & Business Understanding |
-| Sree Haran Chidambaram | Data Cleaning & Exploratory Data Analysis |
-| Sree Vardhan | Feature Engineering & Data Preprocessing |
+| Sai Baba Kancherla (Team Lead) | Modeling, Project Integration & Presentation |
+| Chandu Pallam | Data Collection, Business Understanding & Presentation |
+| Sree Haran Chidambaram | Data Cleaning, Exploratory Data Analysis & Presentation |
+| Sree Vardhan | Feature Engineering, Data Preprocessing & Presentation |
 | Sreenith Raju | Model Evaluation, Documentation & Presentation |
 
 ---
