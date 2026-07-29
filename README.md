@@ -7,7 +7,7 @@
 | Sai Baba Kancherla (Team Lead) | Modeling, Project Integration & Presentation |
 | Chandu Pallam | Data Collection, Business Understanding & Presentation |
 | Sree Haran Chidambaram | Data Cleaning, Exploratory Data Analysis & Presentation |
-| Sree Vardhan | Feature Engineering, Data Preprocessing & Presentation |
+| Sri Vardhan Musuluri | Feature Engineering, Data Preprocessing & Presentation |
 | Sreenith Raju | Model Evaluation, Documentation & Presentation |
 
 ---
