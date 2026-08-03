@@ -328,9 +328,9 @@ The comparative analysis enables the identification of the most suitable algorit
 
 | Model | Precision | Recall | F1 Score | ROC AUC | PR AUC |
 |---------|-------------|-------------|-------------|---------|-------------|
-| Logistic Regression | — | — | — | — | — |
-| Random Forest | — | — | — | — | — |
-| XGBoost | — | — | — | — | — |
+| Logistic Regression | 0.9714 | 0.9951 | 0.9831 | 0.9981 | 0.9952 |
+| Random Forest | 1.0000 | 0.9951 | 0.997 | 0.9976 | 0.9951 |
+| XGBoost | 1.0000 | 0.9951 | 0.9976 | 0.9961 | 0.9951 |
 
 > **Note:** The table will be updated with the final experimental results obtained from the modelling notebook.
 
