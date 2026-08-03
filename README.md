@@ -107,7 +107,7 @@ The dataset represents a highly imbalanced binary classification problem, where 
 ## Feature Description
 
 | Feature | Description |
-|   |    -|
+|---------|-------------|
 | step | Time step representing one hour of simulation |
 | type | Type of financial transaction |
 | amount | Transaction amount |
@@ -127,7 +127,7 @@ The dataset represents a highly imbalanced binary classification problem, where 
 The project was implemented using the following technologies and tools:
 
 | Category | Technology |
-|   -|    |
+|---------|-------------|
 | Programming Language | Python 3.x |
 | Data Manipulation | Pandas, NumPy |
 | Data Visualization | Matplotlib, Seaborn |
@@ -177,7 +177,7 @@ The Exploratory Data Analysis (EDA) phase was conducted to understand the charac
 The dataset was examined for missing values, duplicate records, and data type consistency.
 
 | Assessment | Result |
-|    |  --|
+|---------|-------------|
 | Missing Values | None |
 | Duplicate Records | None |
 | Data Types | Valid |
@@ -192,7 +192,7 @@ The absence of missing values and duplicate records eliminated the need for exte
 The dataset contains **636,262** financial transactions, of which only **821** are fraudulent.
 
 | Transaction Type | Count |
-|      |  :|
+|---------|-------------|
 | Legitimate | 635,441 |
 | Fraudulent | 821 |
 
@@ -222,7 +222,7 @@ Based on this observation, only CASH_OUT and TRANSFER transactions were retained
 After filtering:
 
 | Metric | Value |
-|  --|  :|
+|---------|-------------|
 | Remaining Transactions | 277,510 |
 | Fraud Rate | 0.2958% |
 
@@ -255,7 +255,7 @@ Feature engineering was performed to derive additional variables capable of impr
 The following features were created:
 
 | Feature | Description |
-|   |    -|
+|---------|-------------|
 | errorBalanceOrig | Difference between expected and actual sender balance after the transaction |
 | errorBalanceDest | Difference between expected and actual receiver balance after the transaction |
 | isFullDrain | Indicates whether the sender account balance becomes zero after the transaction |
@@ -307,7 +307,7 @@ The performance of each machine learning model was assessed using multiple evalu
 The following evaluation metrics were employed:
 
 | Metric | Purpose |
-|   |   |
+|---------|-------------|
 | Accuracy | Overall proportion of correctly classified transactions |
 | Precision | Measures how many predicted fraud cases are actually fraudulent |
 | Recall | Measures the proportion of actual fraud cases successfully detected |
@@ -327,7 +327,7 @@ The developed machine learning models were compared using Precision, Recall, F1 
 The comparative analysis enables the identification of the most suitable algorithm for financial fraud detection based on predictive performance and business requirements.
 
 | Model | Precision | Recall | F1 Score | ROC AUC | PR AUC |
-|  --|   -:|  --:|   :|   :|  --:|
+|---------|-------------|-------------|-------------|---------|-------------|
 | Logistic Regression | — | — | — | — | — |
 | Random Forest | — | — | — | — | — |
 | XGBoost | — | — | — | — | — |
@@ -343,7 +343,7 @@ Machine learning based fraud detection systems provide significant business valu
 The business impact of fraud detection can be analysed through two types of prediction errors:
 
 | Prediction Error | Business Impact | Potential Consequences |
-|      |     --|        |
+|-------------|-------------|-------------|
 | **False Negative** | Fraud transaction classified as legitimate | Financial loss, regulatory penalties, reputational damage, reduced customer trust |
 | **False Positive** | Legitimate transaction classified as fraud | Customer inconvenience, delayed transactions, increased operational costs due to manual review |
 
