@@ -9,19 +9,19 @@
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
----
+
 
 ## Executive Summary
 
-This project presents an end-to-end machine learning framework for detecting fraudulent financial transactions using the PaySim Synthetic Financial Dataset. Financial fraud has become a significant challenge for modern digital payment systems, resulting in substantial financial losses, operational inefficiencies, and declining customer trust. As digital transactions continue to increase globally, financial institutions require intelligent, scalable, and automated fraud detection systems capable of identifying suspicious activities in real time.
+This project presents an end to end machine learning framework for detecting fraudulent financial transactions using the PaySim Synthetic Financial Dataset. Financial fraud has become a significant challenge for modern digital payment systems, resulting in substantial financial losses, operational inefficiencies, and declining customer trust. As digital transactions continue to increase globally, financial institutions require intelligent, scalable, and automated fraud detection systems capable of identifying suspicious activities in real time.
 
-The objective of this project is to develop and evaluate supervised machine learning models capable of accurately distinguishing fraudulent transactions from legitimate ones. The project follows a structured data science workflow consisting of data exploration, preprocessing, feature engineering, model development, performance evaluation, and comparative analysis. Given the highly imbalanced nature of fraud detection datasets, particular emphasis is placed on selecting evaluation metrics that provide meaningful insights beyond overall accuracy, including Precision, Recall, F1-Score, ROC-AUC, and Precision-Recall analysis.
+The objective of this project is to develop and evaluate supervised machine learning models capable of accurately distinguishing fraudulent transactions from legitimate ones. The project follows a structured data science workflow consisting of data exploration, preprocessing, feature engineering, model development, performance evaluation, and comparative analysis. Given the highly imbalanced nature of fraud detection datasets, particular emphasis is placed on selecting evaluation metrics that provide meaningful insights beyond overall accuracy, including Precision, Recall, F1 Score, ROC AUC, and Precision Recall analysis.
 
-The implementation is based on Python and the Scikit-learn ecosystem, with extensive use of data visualization, statistical analysis, and predictive modelling techniques. The project aims not only to achieve high predictive performance but also to demonstrate a systematic machine learning methodology aligned with real-world business requirements and industry best practices.
+The implementation is based on Python and the Scikit learn ecosystem, with extensive use of data visualization, statistical analysis, and predictive modelling techniques. The project aims not only to achieve high predictive performance but also to demonstrate a systematic machine learning methodology aligned with real world business requirements and industry best practices.
 
 This repository serves as the implementation companion for the Machine Learning module within the Master of Science programme in Applied Data Science & Artificial Intelligence (Business Analytics) at SRH University of Applied Sciences, Germany. The project demonstrates the practical application of machine learning techniques for fraud detection while emphasizing reproducibility, model evaluation, and business relevance.
 
----
+
 
 ## Table of Contents
 
@@ -46,29 +46,29 @@ This repository serves as the implementation companion for the Machine Learning 
 19. Team Members
 20. License
 
----
+ 
 
 ## Introduction
 
 Digital financial services have transformed the way individuals and organizations conduct monetary transactions. Mobile banking, online payment platforms, and digital wallets have significantly improved accessibility and convenience. However, this rapid digital transformation has also created new opportunities for increasingly sophisticated fraudulent activities.
 
-Financial fraud has become a major concern for banks, payment service providers, fintech companies, and regulatory authorities. Traditional rule-based fraud detection systems often struggle to identify emerging fraud patterns because fraudulent behaviour continuously evolves. Machine learning provides a data-driven approach capable of learning complex transaction patterns and detecting anomalies that may indicate fraudulent activity.
+Financial fraud has become a major concern for banks, payment service providers, fintech companies, and regulatory authorities. Traditional rule based fraud detection systems often struggle to identify emerging fraud patterns because fraudulent behaviour continuously evolves. Machine learning provides a data driven approach capable of learning complex transaction patterns and detecting anomalies that may indicate fraudulent activity.
 
-This project investigates the application of supervised machine learning algorithms for financial fraud detection using transaction-level data generated by the PaySim simulator. The study combines exploratory data analysis, feature engineering, predictive modelling, and quantitative performance evaluation to develop an effective fraud detection framework. The findings provide practical insights into building scalable machine learning solutions capable of supporting fraud prevention strategies within modern financial systems.
+This project investigates the application of supervised machine learning algorithms for financial fraud detection using transaction level data generated by the PaySim simulator. The study combines exploratory data analysis, feature engineering, predictive modelling, and quantitative performance evaluation to develop an effective fraud detection framework. The findings provide practical insights into building scalable machine learning solutions capable of supporting fraud prevention strategies within modern financial systems.
 
----
+ 
 
 ## Business Problem
 
 Financial institutions process millions of digital transactions every day through mobile banking applications, online payment gateways, and electronic fund transfer systems. While digital payment technologies have significantly improved financial accessibility and operational efficiency, they have also increased the complexity and frequency of fraudulent activities.
 
-Traditional fraud detection systems primarily rely on predefined business rules and expert knowledge. Although these approaches can detect known fraud patterns, they often struggle to identify new and evolving fraudulent behaviours. In addition, rule-based systems frequently generate a large number of false positives, leading to unnecessary transaction reviews, increased operational costs, and reduced customer satisfaction.
+Traditional fraud detection systems primarily rely on predefined business rules and expert knowledge. Although these approaches can detect known fraud patterns, they often struggle to identify new and evolving fraudulent behaviours. In addition, rule based systems frequently generate a large number of false positives, leading to unnecessary transaction reviews, increased operational costs, and reduced customer satisfaction.
 
-Machine learning offers a scalable and data-driven alternative by learning transaction patterns directly from historical data. Predictive models can automatically distinguish between legitimate and fraudulent transactions, allowing financial institutions to identify suspicious activities with greater speed and accuracy.
+Machine learning offers a scalable and data driven alternative by learning transaction patterns directly from historical data. Predictive models can automatically distinguish between legitimate and fraudulent transactions, allowing financial institutions to identify suspicious activities with greater speed and accuracy.
 
 The primary business challenge addressed in this project is the development of an intelligent fraud detection system capable of accurately identifying fraudulent transactions while minimizing both financial losses caused by undetected fraud and operational costs associated with false alarms.
 
----
+ 
 
 ## Project Objectives
 
@@ -82,9 +82,9 @@ The specific objectives are:
 - To develop supervised machine learning models for binary fraud classification.
 - To evaluate and compare model performance using multiple classification metrics, including Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix.
 - To identify the most effective model for fraud detection based on predictive performance and business relevance.
-- To discuss the practical implications of machine learning-based fraud detection within modern financial systems.
+- To discuss the practical implications of machine learning based fraud detection within modern financial systems.
 
----
+ 
 
 ## Dataset Description
 
@@ -107,7 +107,7 @@ The dataset represents a highly imbalanced binary classification problem, where 
 ## Feature Description
 
 | Feature | Description |
-|---------|-------------|
+|   |    -|
 | step | Time step representing one hour of simulation |
 | type | Type of financial transaction |
 | amount | Transaction amount |
@@ -118,29 +118,29 @@ The dataset represents a highly imbalanced binary classification problem, where 
 | oldbalanceDest | Receiver balance before transaction |
 | newbalanceDest | Receiver balance after transaction |
 | isFraud | Fraud indicator |
-| isFlaggedFraud | Business rule-based fraud flag |
+| isFlaggedFraud | Business rule based fraud flag |
 
----
+ 
 
 ## Technology Stack
 
 The project was implemented using the following technologies and tools:
 
 | Category | Technology |
-|----------|------------|
+|   -|    |
 | Programming Language | Python 3.x |
 | Data Manipulation | Pandas, NumPy |
 | Data Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
+| Machine Learning | Scikit learn |
 | Development Environment | Jupyter Notebook, Visual Studio Code |
 | Version Control | Git, GitHub |
 | Documentation | Markdown |
 
----
+ 
 
 ## Research Methodology
 
-This project follows the **Cross-Industry Standard Process for Data Mining (CRISP-DM)**, a widely adopted methodology for developing data science and machine learning solutions.
+This project follows the **Cross-Industry Standard Process for Data Mining (CRISP DM)**, a widely adopted methodology for developing data science and machine learning solutions.
 
 ### 1. Business Understanding
 
@@ -160,13 +160,13 @@ Supervised machine learning algorithms were trained to classify transactions as 
 
 ### 5. Evaluation
 
-Model performance was assessed using Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix. Particular emphasis was placed on Recall because failing to detect fraudulent transactions has a significantly higher business cost than incorrectly flagging legitimate transactions.
+Model performance was assessed using Accuracy, Precision, Recall, F1 Score, ROC AUC, and Confusion Matrix. Particular emphasis was placed on Recall because failing to detect fraudulent transactions has a significantly higher business cost than incorrectly flagging legitimate transactions.
 
 ### 6. Deployment Considerations
 
 Although the current implementation is intended for academic purposes, the developed workflow can serve as the foundation for deployment within a real-time fraud detection system integrated into digital payment platforms.
 
----
+ 
 
 ## Exploratory Data Analysis
 
@@ -177,7 +177,7 @@ The Exploratory Data Analysis (EDA) phase was conducted to understand the charac
 The dataset was examined for missing values, duplicate records, and data type consistency.
 
 | Assessment | Result |
-|------------|--------|
+|    |  --|
 | Missing Values | None |
 | Duplicate Records | None |
 | Data Types | Valid |
@@ -185,14 +185,14 @@ The dataset was examined for missing values, duplicate records, and data type co
 
 The absence of missing values and duplicate records eliminated the need for extensive data cleaning, allowing the analysis to focus on understanding transaction behaviour and fraud patterns.
 
----
+ 
 
 ### Class Distribution
 
 The dataset contains **636,262** financial transactions, of which only **821** are fraudulent.
 
 | Transaction Type | Count |
-|------------------|------:|
+|      |  :|
 | Legitimate | 635,441 |
 | Fraudulent | 821 |
 
@@ -200,9 +200,9 @@ Fraud Rate:
 
 **0.129%**
 
-This demonstrates a highly imbalanced classification problem. Consequently, evaluation metrics such as **Precision**, **Recall**, **F1-Score**, and **ROC-AUC** are more informative than overall classification accuracy.
+This demonstrates a highly imbalanced classification problem. Consequently, evaluation metrics such as **Precision**, **Recall**, **F1 Score**, and **ROC AUC** are more informative than overall classification accuracy.
 
----
+ 
 
 ### Transaction Type Analysis
 
@@ -222,19 +222,19 @@ Based on this observation, only CASH_OUT and TRANSFER transactions were retained
 After filtering:
 
 | Metric | Value |
-|--------|------:|
+|  --|  :|
 | Remaining Transactions | 277,510 |
 | Fraud Rate | 0.2958% |
 
 This preprocessing step improved the relevance of the dataset without discarding fraudulent observations.
 
----
+ 
 
 ### Feature Relationship Analysis
 
 Correlation analysis and feature exploration indicated that transaction balances before and after each transaction provide valuable information for fraud detection. In particular, inconsistencies between expected and observed account balances suggested opportunities for feature engineering.
 
----
+ 
 
 ### Key Findings
 
@@ -243,10 +243,10 @@ The EDA phase produced several important insights:
 - The dataset contains no missing values or duplicate records.
 - Fraudulent transactions account for only **0.129%** of all observations.
 - Fraud occurs exclusively in **CASH_OUT** and **TRANSFER** transaction types.
-- Filtering non-fraud transaction categories increases the fraud proportion from **0.129%** to **0.2958%**, creating a more informative modelling dataset.
+- Filtering non fraud transaction categories increases the fraud proportion from **0.129%** to **0.2958%**, creating a more informative modelling dataset.
 - Account balance variables exhibit strong predictive potential and motivate additional feature engineering.
 
----
+ 
 
 ## Feature Engineering
 
@@ -255,7 +255,7 @@ Feature engineering was performed to derive additional variables capable of impr
 The following features were created:
 
 | Feature | Description |
-|---------|-------------|
+|   |    -|
 | errorBalanceOrig | Difference between expected and actual sender balance after the transaction |
 | errorBalanceDest | Difference between expected and actual receiver balance after the transaction |
 | isFullDrain | Indicates whether the sender account balance becomes zero after the transaction |
@@ -268,7 +268,7 @@ In addition, identifier variables (`nameOrig`, `nameDest`) and the business rule
 
 The resulting processed dataset consists of **277,510 observations** with engineered features specifically designed to improve fraud detection performance.
 
----
+ 
 
 ## Machine Learning Models
 
@@ -282,23 +282,23 @@ Three supervised machine learning algorithms were implemented and evaluated:
 
 Logistic Regression was selected as the baseline classification model due to its simplicity, interpretability, and computational efficiency. The model establishes a linear decision boundary and provides a benchmark against which more sophisticated ensemble methods can be compared.
 
----
+ 
 
 ### 2. Random Forest
 
 Random Forest is an ensemble learning algorithm that constructs multiple decision trees using bootstrap aggregation (bagging). By combining predictions from numerous trees, Random Forest improves predictive performance, reduces overfitting, and captures complex non-linear relationships within financial transaction data.
 
----
+ 
 
 ### 3. Extreme Gradient Boosting (XGBoost)
 
 XGBoost is a gradient boosting algorithm designed for high predictive accuracy and computational efficiency. The algorithm iteratively corrects prediction errors made by previous trees, making it particularly effective for structured tabular datasets and highly imbalanced classification problems such as fraud detection.
 
----
+ 
 
 The performance of all models was evaluated using multiple classification metrics, enabling a comprehensive comparison of predictive capability and supporting the selection of the most appropriate model for fraud detection.
 
----
+ 
 
 ## Model Evaluation
 
@@ -307,7 +307,7 @@ The performance of each machine learning model was assessed using multiple evalu
 The following evaluation metrics were employed:
 
 | Metric | Purpose |
-|---------|---------|
+|   |   |
 | Accuracy | Overall proportion of correctly classified transactions |
 | Precision | Measures how many predicted fraud cases are actually fraudulent |
 | Recall | Measures the proportion of actual fraud cases successfully detected |
@@ -318,32 +318,32 @@ The following evaluation metrics were employed:
 
 Given the significant financial consequences associated with undetected fraudulent transactions, **Recall** was considered the most critical evaluation metric. A higher Recall indicates that the model successfully identifies a greater proportion of fraudulent transactions, thereby reducing potential financial losses.
 
----
+ 
 
 ## Results
 
-The developed machine learning models were compared using Precision, Recall, F1-Score, ROC-AUC, and PR-AUC.
+The developed machine learning models were compared using Precision, Recall, F1 Score, ROC vAUC, and PR AUC.
 
 The comparative analysis enables the identification of the most suitable algorithm for financial fraud detection based on predictive performance and business requirements.
 
-| Model | Precision | Recall | F1-Score | ROC-AUC | PR-AUC |
-|--------|----------:|--------:|---------:|---------:|--------:|
+| Model | Precision | Recall | F1 Score | ROC AUC | PR AUC |
+|  --|   -:|  --:|   :|   :|  --:|
 | Logistic Regression | — | — | — | — | — |
 | Random Forest | — | — | — | — | — |
 | XGBoost | — | — | — | — | — |
 
 > **Note:** The table will be updated with the final experimental results obtained from the modelling notebook.
 
----
+ 
 
 ## Business Impact
 
-Machine learning-based fraud detection systems provide significant business value by reducing financial losses, improving operational efficiency, and enhancing customer trust. In modern financial institutions, the cost associated with undetected fraudulent transactions is substantially higher than the cost of reviewing legitimate transactions.
+Machine learning based fraud detection systems provide significant business value by reducing financial losses, improving operational efficiency, and enhancing customer trust. In modern financial institutions, the cost associated with undetected fraudulent transactions is substantially higher than the cost of reviewing legitimate transactions.
 
 The business impact of fraud detection can be analysed through two types of prediction errors:
 
 | Prediction Error | Business Impact | Potential Consequences |
-|------------------|-----------------|------------------------|
+|      |     --|        |
 | **False Negative** | Fraud transaction classified as legitimate | Financial loss, regulatory penalties, reputational damage, reduced customer trust |
 | **False Positive** | Legitimate transaction classified as fraud | Customer inconvenience, delayed transactions, increased operational costs due to manual review |
 
@@ -351,7 +351,7 @@ In fraud detection systems, minimizing **False Negatives** is generally consider
 
 Therefore, evaluation metrics such as **Recall** are prioritised over accuracy when selecting the most appropriate machine learning model for deployment.
 
----
+ 
 
 ## Repository Structure
 
@@ -373,7 +373,7 @@ Advanced-Fraud-Detection-ML/
 └── LICENSE
 ```
 
----
+ 
 
 ## Installation
 
@@ -395,7 +395,7 @@ cd Advanced-Fraud-Detection-ML
 pip install -r requirements.txt
 ```
 
----
+ 
 
 ## Usage
 
@@ -412,21 +412,21 @@ Run the project notebooks in the following sequence:
    - Evaluate model performance using classification metrics.
    - Compare model performance.
 
----
+ 
 
 ## Limitations
 
 Although the developed fraud detection framework demonstrates the application of machine learning techniques to financial fraud detection, several limitations should be acknowledged:
 
-- The PaySim dataset is synthetically generated and may not fully represent real-world banking behaviour.
+- The PaySim dataset is synthetically generated and may not fully represent real world banking behaviour.
 - Fraudulent transactions constitute only a small proportion of the dataset, resulting in a highly imbalanced classification problem.
-- The project focuses on transaction-level information and does not incorporate customer behavioural history or temporal transaction sequences.
+- The project focuses on transaction level information and does not incorporate customer behavioural history or temporal transaction sequences.
 - Hyperparameter optimisation was not extensively explored and may further improve predictive performance.
-- The current implementation is designed for offline analysis and has not been deployed within a real-time transaction processing environment.
+- The current implementation is designed for offline analysis and has not been deployed within a real time transaction processing environment.
 
 These limitations provide opportunities for future research and model enhancement.
 
----
+ 
 
 ## Future Work
 
@@ -434,16 +434,16 @@ Future work may focus on extending the current fraud detection framework through
 
 Potential improvements include:
 
-- Implementing **5-fold Stratified Cross-Validation** for more robust model evaluation.
+- Implementing **5 fold Stratified Cross Validation** for more robust model evaluation.
 - Hyperparameter optimisation using Grid Search or Bayesian Optimisation.
 - Explainable Artificial Intelligence (XAI) using SHAP for model interpretability.
 - Evaluating additional algorithms such as LightGBM and CatBoost.
 - Investigating Deep Learning and Autoencoder-based anomaly detection methods.
-- Developing real-time fraud detection pipelines using Apache Kafka or Apache Spark.
+- Developing real time fraud detection pipelines using Apache Kafka or Apache Spark.
 - Deploying the trained model as a REST API using FastAPI or Flask.
 - Implementing continuous model monitoring and retraining within an MLOps framework.
 
----
+ 
 
 ## References
 
@@ -457,17 +457,17 @@ Potential improvements include:
 
 5. Lundberg, S. M., & Lee, S. I. (2017). *A Unified Approach to Interpreting Model Predictions*. Advances in Neural Information Processing Systems (NeurIPS).
 
----
+ 
 
 ## Team Members
 
 - Sai Baba Kancherla
 - Chandu Pallam
-- Sree Haran Chidambaram
+- Sreeharan Chidambaram
 - Sree Vardhan
 - Sreenith Raju
 
----
+ 
 
 ## License
 
